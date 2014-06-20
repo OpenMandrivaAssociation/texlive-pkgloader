@@ -1,12 +1,12 @@
-# revision 32864
+# revision 34019
 # category Package
 # catalog-ctan /macros/latex/contrib/pkgloader
-# catalog-date 2014-02-03 01:30:56 +0100
+# catalog-date 2014-05-11 22:11:06 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1.0
+# catalog-version 0.2.0
 Name:		texlive-pkgloader
-Version:	0.1.0
-Release:	2
+Version:	0.2.0
+Release:	1
 Summary:	Managing the options and loading order of other packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pkgloader
@@ -37,22 +37,19 @@ package's repository.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/pkgloader/pkgloader-cls-pkg.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-dry.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-early.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-error.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-false.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-late.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-recommended.sty
-%{_texmfdistdir}/tex/latex/pkgloader/pkgloader-test-rules.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader-true.sty
 %{_texmfdistdir}/tex/latex/pkgloader/pkgloader.sty
 %doc %{_texmfdistdir}/doc/latex/pkgloader/README
 %doc %{_texmfdistdir}/doc/latex/pkgloader/pkgloader-packagedoc.cls
 %doc %{_texmfdistdir}/doc/latex/pkgloader/pkgloader.pdf
 %doc %{_texmfdistdir}/doc/latex/pkgloader/pkgloader.tex
-%doc %{_texmfdistdir}/doc/latex/pkgloader/test1.sty
-%doc %{_texmfdistdir}/doc/latex/pkgloader/test2.sty
-%doc %{_texmfdistdir}/doc/latex/pkgloader/test3.sty
 
 #-----------------------------------------------------------------------
 %prep
