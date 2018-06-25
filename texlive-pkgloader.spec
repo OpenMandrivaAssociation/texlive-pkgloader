@@ -5,7 +5,7 @@
 # catalog-license lppl1.3
 # catalog-version 0.2.0
 Name:		texlive-pkgloader
-Version:	0.6.0
+Version:	0.7.0
 Release:	1
 Summary:	Managing the options and loading order of other packages
 Group:		Publishing
