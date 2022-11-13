@@ -1,18 +1,12 @@
-# revision 34019
-# category Package
-# catalog-ctan /macros/latex/contrib/pkgloader
-# catalog-date 2014-05-11 22:11:06 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2.0
 Name:		texlive-pkgloader
-Version:	0.7.0
-Release:	2
+Version:	47486
+Release:	1
 Summary:	Managing the options and loading order of other packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pkgloader
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pkgloader.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pkgloader.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pkgloader.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pkgloader.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ the package and to report issues (or whatever) via the
 package's repository.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,7 +47,7 @@ package's repository.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
