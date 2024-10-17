@@ -3,7 +3,7 @@ Version:	47486
 Release:	2
 Summary:	Managing the options and loading order of other packages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pkgloader
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pkgloader
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pkgloader.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pkgloader.doc.r%{version}.tar.xz
